@@ -46,7 +46,7 @@ def capture_err(func):
                     0 if not message.from_user else message.from_user.id,
                     0 if not message.chat else message.chat.id,
                     message.text or message.caption,
-                    "".join(errors),
+                    "/n".join(errors),
                 ),
             )
             for x in error_feedback:
